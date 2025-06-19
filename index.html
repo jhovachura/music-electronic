@@ -1,87 +1,110 @@
+<!DOCTYPE html>
 
-<html>
+
+<html lang="es"> 
 <head>
+    <meta charset="UTF-8"/>
     <link rel="stylesheet" href="bootstrap.css">
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="bootstrap.js"></script>
     <style>
         body {
-            background: black;
+            background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background-size: cover;
         }
         .columna {
-            background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
-            background-size: cover;
+            background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para resaltar sobre fondo electrónico */
             color: white;
             text-align: center;
             padding: 20px;
             border: 2px solid white;
+            border-radius: 10px;
         }
         .columna img {
             max-width: 100%;
-            height: auto;
+            height: 200px;
             border-radius: 10px;
+            object-fit: cover;
+        }
+        .btn-custom {
+            margin-top: 10px;
+            background: #b3948b;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background: #00cccc;
+            color: white;
         }
         .row {
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1 style="color:white; text-align:center;">ELECTRONIC MUSIC</h1>
+    <h1>ELECTRONIC MUSIC</h1>
 
-    <!-- TODAS LAS FILAS DENTRO DE UN MISMO CONTAINER -->
     <div class="container">
 
         <!-- Fila 1 -->
         <div class="row">
             <div class="col-12 columna">
-                <a href="https://www.youtube.com/user/DjWalkzz" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Alan_Walker_logo.svg/512px-Alan_Walker_logo.svg.png" alt="Alan Walker">
-                </a>
-                <div>ALAN WALKER</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Alan_Walker_@_Pukkelpop_2016.jpg/512px-Alan_Walker_@_Pukkelpop_2016.jpg" alt="Alan Walker">
+                <h3>ALAN WALKER</h3>
+                <a href="https://www.youtube.com/user/DjWalkzz" target="_blank" class="btn-custom">Ver Página</a>
             </div>
         </div>
 
-        <!-- Fila 2 -->
+        <!-- Fila 2: 4 celdas -->
         <div class="row">
-            <div class="col-8 columna">
-                <a href="https://www.youtube.com/c/Rammor" target="_blank">
-                    <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPM4cI9bi50nMEa6VhNDT9lwF33b3Zh5IDnA-qq=s900-c-k-c0x00ffffff-no-rj" alt="Rammor">
-                </a>
-                <div>RAMMOR</div>
+            <div class="col-6 columna">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_m-rammor" alt="Rammor">
+                <h3>RAMMOR</h3>
+                <a href="https://www.youtube.com/c/Rammor" target="_blank" class="btn-custom">Ver Página</a>
             </div>
-            <div class="col-4 columna">
-                <a href="https://www.youtube.com/user/TheChainsmokers" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/The_Chainsmokers_logo.svg/512px-The_Chainsmokers_logo.svg.png" alt="Chainsmokers">
-                </a>
-                <div>CHAINSMOKERS</div>
+            <div class="col-6 columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/The_Chainsmokers.jpg/512px-The_Chainsmokers.jpg" alt="Chainsmokers">
+                <h3>CHAINSMOKERS</h3>
+                <a href="https://www.youtube.com/user/TheChainsmokers" target="_blank" class="btn-custom">Ver Página</a>
             </div>
+     
         </div>
 
-        <!-- Fila 3 -->
+        <!-- Fila 3: 3 celdas -->
         <div class="row">
             <div class="col-4 columna">
-                <a href="https://www.youtube.com/user/kygomusic" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Kygo_logo.svg/512px-Kygo_logo.svg.png" alt="Kygo">
-                </a>
-                <div>KYGO</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Calvin_Harris.jpg/512px-Calvin_Harris.jpg" alt="Calvin Harris">
+                <h3>CALVIN HARRIS</h3>
+                <a href="https://www.youtube.com/user/CalvinHarrisVEVO" target="_blank" class="btn-custom">Ver Página</a>
             </div>
-            <div class="col-8 columna">
-                <a href="https://www.youtube.com/user/martingarrix" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Martin_Garrix_logo.svg/512px-Martin_Garrix_logo.svg.png" alt="Martin Garrix">
-                </a>
-                <div>MARTIN GARRIX</div>
+            <div class="col-4 columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/David_Guetta_2011.jpg/512px-David_Guetta_2011.jpg" alt="David Guetta">
+                <h3>DAVID GUETTA</h3>
+                <a href="https://www.youtube.com/user/davidguetta" target="_blank" class="btn-custom">Ver Página</a>
+            </div>
+            <div class="col-4 columna">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Diplo_%28cropped%29.jpg/512px-Diplo_%28cropped%29.jpg" alt="Diplo">
+                <h3>DIPLO</h3>
+                <a href="https://www.youtube.com/user/diplo" target="_blank" class="btn-custom">Ver Página</a>
             </div>
         </div>
 
         <!-- Fila 4 -->
         <div class="row">
             <div class="col-12 columna">
-                <a href="https://www.youtube.com/watch?v=2vMH8lITTCE" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Summer_icon.svg/512px-Summer_icon.svg.png" alt="Summer">
-                </a>
-                <div>SUMMER</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Tiësto_Live_2016.jpg/512px-Tiësto_Live_2016.jpg" alt="Tiësto">
+                <h3>TIËSTO</h3>
+                <a href="https://www.youtube.com/user/tiesto" target="_blank" class="btn-custom">Ver página </a>
             </div>
         </div>
 
@@ -89,5 +112,3 @@
 
 </body>
 </html>
-
-
